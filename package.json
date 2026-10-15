@@ -1,0 +1,23 @@
+{
+  "name": "tilt-world",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "description": "PWA Svelte + three.js : pilote un avatar dans un monde 3D avec les capteurs d'orientation du telephone.",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "test": "node scripts/test-sensors.mjs",
+    "icons": "node scripts/gen-icons.mjs"
+  },
+  "dependencies": {
+    "three": "^0.186.1"
+  },
+  "devDependencies": {
+    "@sveltejs/vite-plugin-svelte": "^7.3.1",
+    "svelte": "^5.57.2",
+    "vite": "^8.3.4",
+    "vite-plugin-pwa": "^2.0.0"
+  }
+}
