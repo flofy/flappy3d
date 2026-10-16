@@ -6,6 +6,8 @@ import { VitePWA } from 'vite-plugin-pwa';
 // standard `__VITE_ADDITIONAL_SERVER_ALLOWED_HOSTS` env var, so no VM hostname
 // is ever baked into this tracked file.
 export default defineConfig({
+  // GitHub Pages serves this project from /flappy3d/, not from the domain root.
+  base: '/flappy3d/',
   server: {
     host: '0.0.0.0',
     port: 3000,
@@ -27,9 +29,9 @@ export default defineConfig({
         description:
           "Pilote un avatar dans un monde 3D en inclinant et en tournant ton téléphone. Fonctionne aussi au clavier ou au joystick tactile.",
         lang: 'fr',
-        id: '/',
-        start_url: '/',
-        scope: '/',
+        id: '/flappy3d/',
+        start_url: '/flappy3d/',
+        scope: '/flappy3d/',
         display: 'standalone',
         display_override: ['fullscreen', 'standalone', 'minimal-ui'],
         orientation: 'any',
